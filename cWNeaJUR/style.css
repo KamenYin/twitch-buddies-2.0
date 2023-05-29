@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    border: outset 0px black;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 2px -10px 20px 20px #4B0080;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    font-family: Fredoka, sans-serif;
+    background-color: indigo;
+    color: whitesmoke;
+}
+
+.banner > h1 {
+    font-size: 60px;
+}
+
+body {
+    background-color: violet;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.twitch-logo {
+    width: 55px;
+    height: 55px;
+}
+
+.streamer {
+    margin: 10px;
+    font-family: Fredoka, sans-serif;
+}
+
+.streamer-block {
+    display: flex;
+    height: 300px;
+    padding: 0px 10px 30px 0px;
+    margin: 30px 0px;
+    border: 2px solid indigo;
+    border-radius: 22px;
+    background: indigo;
+    width: 100%;
+}
+
+.streamer--pic {
+    border-radius: 20px;
+    height: 299px;
+}
+
+.image-link {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+.info-box {
+    padding: 10px;
+    font-size: 15px;
+    color: whitesmoke;
+    overflow: auto;
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #f5f5f5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: violet;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: indigo;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: pink;
+}
+
+.streamer--name {
+    color: violet;
+}
+
+.streamer--type {
+    margin: 15px 0px 15px 0px;
+    padding: 4px 0px 8px 0px;
+    border: 3px solid;
+    border-radius: 23px;
+    width: 80px;
+    text-align: center;
+  
+
+}
+
+.streamer--type:hover {
+  color: pink;
+  
+}
+
+
+.streamer--about {
+    margin: 5px 0px 10px 0px;
+}
+
+.categories {
+    margin: 0px 0px 10px 0px;
+}
+
+.info-box > h4 {
+    padding-top: 10px;
+    color: violet;
+}
+
+.endNotes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 2px 10px 20px 20px #4B0080;
+    font-family: Fredoka, sans-serif;
+    background-color: indigo;
+    color: whitesmoke;
+    font-size: 11px;
+    width: 100%;
+    height: 70px;
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+    .banner > h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .twitch-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    body {
+        background-color: pink;
+    }
+
+    .streamer-block {
+        height: 200px;
+        padding: 0px 10px 30px 0px;
+        margin: 20px 0px;
+        border: 2px solid indigo;
+        border-radius: 22px;
+        background: indigo;
+        width: 100%;
+    }
+
+    .streamer--pic {
+        border-radius: 20px;
+        height: 198px;
+    }
+
+    .info-box {
+        padding: 14px;
+        font-size: 15px;
+        color: whitesmoke;
+        overflow: auto;
+    }
+
+    /* Hide the default scrollbar */
+    ::-webkit-scrollbar {
+        width: 6px;
+        background-color: #f5f5f5;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background-color: violet;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background-color: indigo;
+        border-radius: 6px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: pink;
+    }
+
+    .endNotes {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: 0px 10px 20px 20px #4B0080;
+        font-family: Fredoka, sans-serif;
+        background-color: indigo;
+        color: whitesmoke;
+        font-size: 11px;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        padding-bottom: 0;
+    }
+}
